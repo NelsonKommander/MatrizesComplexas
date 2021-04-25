@@ -7,8 +7,8 @@ no cálculo de sistemas elétricos em anel, resolvendo os sistemas lineares que 
 
 - [X] Receber a matriz dos coeficientes e o vetor de termos independentes reais
 - [X] Resolver sistemas lineares reais de qualquer ordem especificada
-- [ ] Receber a matriz dos coeficientes e o vetor de termos independentes complexos
-- [ ] Resolver sistemas lineares complexos de qualquer ordem especificada
+- [X] Receber a matriz dos coeficientes e o vetor de termos independentes complexos
+- [X] Resolver sistemas lineares complexos de qualquer ordem especificada
 - [ ] Deixar de receber como entrada a matriz e o vetor, partindo da tabela, montando o sistema linear e resolvendo
 
 
@@ -20,7 +20,7 @@ no cálculo de sistemas elétricos em anel, resolvendo os sistemas lineares que 
 
 ### Trabalhando com números reais
 
-As casas decimais dos números devem ser separads por '.' e não por ','
+As casas decimais dos números devem ser separads por **'.'** e não por **','**
 
 **O arquivo de entrada deve ter o seguinte formato:**
 
