@@ -77,4 +77,5 @@ def main():
 
     print(np.allclose(np.dot(coeficientes, sol), resposta))
 
+print("Boa prova!!!")
 main()
