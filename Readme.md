@@ -1,7 +1,7 @@
 # Calculadora de sistemas lineares
 
 O projeto contido neste repositório tem como objetivo ser uma ferramenta que ajude
-no cálculo de redes elétricas, resolvendo os sistemas lineares que usam números complexos.
+no cálculo de sistemas elétricos em anel, resolvendo os sistemas lineares que usam números complexos.
 
 ## To Do
 

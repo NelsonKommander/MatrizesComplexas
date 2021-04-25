@@ -8,7 +8,7 @@ def clear():
         _ = os.system('clear')
 
 def obter_caminho():
-    print("Forneca o caminho da imagem:")
+    print("Forneca o caminho da entrada:")
     return str(input())
 
 def validar_caminho(caminho):
@@ -18,8 +18,8 @@ def validar_caminho(caminho):
 def main():
     clear()
 
-    print("Bem vindo ao resolvedor de prova de eletrica 5000")
-    print("=================================================")
+    print("Bem vindo ao resolvedor de matriz elétrica")
+    print("==========================================")
 
     caminho = obter_caminho()
     valido = validar_caminho(caminho)
