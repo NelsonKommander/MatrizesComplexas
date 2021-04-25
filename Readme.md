@@ -38,7 +38,7 @@ Onde **'o'** é a ordem da matriz quadrada, **'c'** são os coeficientes e **'ti
 
 **Exemplo:**
 
-![Sistema linear](https://www.todoestudo.com.br/wp-content/uploads/2020/05/sistema-linear-3.png)
+![Sistema linear real](./images/sistema_linear_real.png)
 
 ```
 2
@@ -56,7 +56,7 @@ Os números complexos aparecerão no arquivo de entrada no formato **R|I**, onde
 
 **Exemplo**
 
-![Matriz Complexa](https://climserv.ipsl.polytechnique.fr/documentation/idl_help/images/Linear_Systems-21.jpg)
+![Matriz Complexa](./images/sistema_linear_complexo.jpg)
 
 ```
 4
