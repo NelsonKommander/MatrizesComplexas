@@ -15,6 +15,18 @@ def validar_caminho(caminho):
     arquivoExiste = os.path.isfile(caminho)
     return arquivoExiste
 
+def str_to_complex(string):
+    numero = string.split('|')
+    result = complex(0,0)
+
+    # Se o tamanho for maior que 1 significa que o número tem uma parte imaginária
+    if len(numero) > 1:
+        result = complex(float(numero[0]), float(numero[1]))
+    else:
+        result = complex(float(numero[0]), 0)
+
+    return result
+
 def main():
     clear()
 
@@ -33,29 +45,36 @@ def main():
 
         valido = validar_caminho(caminho)
 
+    # Abrindo o arquivo de entrada
     arquivoDeEntrada = open(caminho)
 
+    # Recebendo a ordem da primeira linha
     ordem = int(arquivoDeEntrada.readline())
 
     coeficientes = []
     resposta = []
 
+    # Lendo a matriz dos coeficientes e o vetor resposta
     for m in range(ordem):
         linha = arquivoDeEntrada.readline().split(' ')
         vetor = []
 
         for i in range(ordem):
-            vetor.append(float(linha[i]))
+            vetor.append(str_to_complex(linha[i]))
 
         coeficientes.append(vetor)
-        resposta.append(float(linha[ordem]))
+        resposta.append(str_to_complex(linha[ordem]))
 
     arquivoDeEntrada.close()
 
+    # Resolvendo o sistema através do numpy
     sol = np.linalg.solve(coeficientes, resposta)
 
-    print("Solucao do seu sistema é: ", sol)
+    print("A solucao do seu sistema é: ")
 
+    for i in range(ordem):
+        print(f'v{i+1} = {sol[i]:.4f}')
+
+    print(np.allclose(np.dot(coeficientes, sol), resposta))
 
 main()
-#teste_matriz()

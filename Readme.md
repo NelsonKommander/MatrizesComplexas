@@ -19,6 +19,9 @@ no cálculo de sistemas elétricos em anel, resolvendo os sistemas lineares que 
 - O valor das incógnitas será imprimido na tela
 
 ### Trabalhando com números reais
+
+As casas decimais dos números devem ser separads por '.' e não por ','
+
 **O arquivo de entrada deve ter o seguinte formato:**
 
 ```
@@ -27,6 +30,7 @@ c c c ti
 c c c ti
 c c c ti
 ```
+
 Onde **'o'** é a ordem da matriz, **'c'** são os coeficientes e **'ti'** são os termos independentes
 
 
