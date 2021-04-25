@@ -5,22 +5,22 @@ no cálculo de sistemas elétricos em anel, resolvendo os sistemas lineares que 
 
 ## To Do
 
-- [X] Receber a matriz dos coeficientes e o vetor de termos independentes reais
-- [X] Resolver sistemas lineares reais de qualquer ordem especificada
-- [X] Receber a matriz dos coeficientes e o vetor de termos independentes complexos
-- [X] Resolver sistemas lineares complexos de qualquer ordem especificada
-- [ ] Deixar de receber como entrada a matriz e o vetor, partindo da tabela, montando o sistema linear e resolvendo
+- [X] Receber a matriz dos coeficientes e o vetor de termos independentes reais;
+- [X] Resolver sistemas lineares reais de qualquer ordem especificada;
+- [X] Receber a matriz dos coeficientes e o vetor de termos independentes complexos;
+- [X] Resolver sistemas lineares complexos de qualquer ordem especificada;
+- [ ] Deixar de receber como entrada a matriz e o vetor, partindo da tabela, montando o sistema linear e resolvendo.
 
 
 ## Instruções de uso
 
-- Instalar o python 3 e a biblioteca numpy (testada na versão 1.20.2)
-- Rodar o script e passar o caminho do arquivo de entrada
-- O valor das incógnitas será imprimido na tela
+- Instalar o python 3 e a biblioteca numpy (testada na versão 1.20.2);
+- Rodar o script e passar o caminho do arquivo de entrada;
+- O valor das incógnitas será imprimido na tela.
 
-### Trabalhando com números reais
+### Formatação da entrada
 
-As casas decimais dos números devem ser separads por **'.'** e não por **','**
+As casas decimais dos números devem ser separadas por **'.'** e não por **','**
 
 **O arquivo de entrada deve ter o seguinte formato:**
 
@@ -31,7 +31,9 @@ c c c ti
 c c c ti
 ```
 
-Onde **'o'** é a ordem da matriz, **'c'** são os coeficientes e **'ti'** são os termos independentes
+Onde **'o'** é a ordem da matriz quadrada, **'c'** são os coeficientes e **'ti'** são os termos independentes.
+
+### Trabalhando com números reais
 
 
 **Exemplo:**
@@ -46,7 +48,21 @@ Onde **'o'** é a ordem da matriz, **'c'** são os coeficientes e **'ti'** são 
 
 ### Trabalhando com números complexos
 
-**WIP**
-
 Os números complexos aparecerão no arquivo de entrada no formato **R|I**, onde
-**'R'** é a parte real e **'I'** a parte imaginária
+**'R'** é a parte real e **'I'** a parte imaginária.
+
+- A utilização da parte real **'R'** será **obrigatória**!!!; 
+- A parte imaginária **'I'**, quando não fornecida será considerada '0j'. 
+
+**Exemplo**
+
+![Matriz Complexa](https://climserv.ipsl.polytechnique.fr/documentation/idl_help/images/Linear_Systems-21.jpg)
+
+```
+4
+-1 1|-3 2 3|3 15|-2
+-2 -1|3 0|1 3|1 -2|-1
+3 0|4 0|-1 0|-3 -20|11
+2 1|1 2|1 2|1 -10|10  
+
+```
